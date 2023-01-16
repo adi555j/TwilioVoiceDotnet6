@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d40a9fab-054f-41ab-abc4-d02d16e632df</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Twilio.AspNet.Core" />
+    <None Remove="Twilio" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Twilio.AspNet.Core" Version="7.0.0" />
+    <PackageReference Include="Twilio" Version="6.2.1" />
+  </ItemGroup>
+</Project>
